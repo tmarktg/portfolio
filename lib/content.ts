@@ -182,7 +182,7 @@ export const involvements: Involvement[] = [
 ];
 
 export const bio =
-  "B.S. Computer Science, San Diego State University — summa cum laude, 3.9 GPA. ";
+  "From 2023 to 2025 I studied Computer Science at San Diego State University, graduating summa cum laude with a 3.9 GPA. In early 2026 I worked as a software engineer for CineStar Cinemas, where I owned a production booking platform serving live traffic across multiple client sites. Since then I've been heads-down building a RAG-based movie recommender, a serverless AWS data pipeline, and an AI meme generator — while looking for my next full-time role.";
 
 export const contact = {
   github: "https://github.com/tmarktg",

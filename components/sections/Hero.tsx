@@ -13,9 +13,8 @@ export function Hero() {
               SOFTWARE ENGINEER • SAN DIEGO, CA
             </p>
             <h1 className="text-hero font-sans font-bold text-foreground">
-              <span className="block">Build.</span>
-              <span className="block">Ship.</span>
-              <span className="block">Iterate.</span>
+              <span className="block">Hey,</span>
+              <span className="block">I&apos;m Mark.</span>
             </h1>
             <p className="max-w-xl text-lg text-muted">
               Full-stack engineer specializing in Python, TypeScript, and cloud
