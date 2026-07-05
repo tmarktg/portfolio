@@ -106,6 +106,13 @@ export const interests: InterestTile[] = [
     image: "interest-comfyui",
   },
   {
+    name: "Hermes Agent",
+    descriptor: "Nous Research's agentic model interface for tool use and reasoning.",
+    url: "https://hermes-agent.nousresearch.com",
+    glyph: ">_",
+    image: "interest-hermes-agent",
+  },
+  {
     name: "Stable Diffusion",
     descriptor: "Open-source image generation models.",
     url: "https://github.com/Stability-AI/stablediffusion",
