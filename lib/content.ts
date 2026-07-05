@@ -65,6 +65,26 @@ export const projects: Project[] = [
       url: "https://aiclub.sdsu.edu",
     },
   },
+  {
+    number: "04",
+    title: "ATO in a Pipeline",
+    description:
+      "Secure software delivery reference pipeline that hard-blocks on SAST, secrets, and CVE scans, signs and attests every image with Syft/Cosign, and enforces signature and policy checks at Kubernetes admission via Kyverno — with Terraform drift detection and every control mapped to NIST 800-53.",
+    tags: [
+      "GitLab CI",
+      "Semgrep",
+      "Gitleaks",
+      "Trivy",
+      "Syft",
+      "Cosign",
+      "Kyverno",
+      "Kubernetes",
+      "Terraform",
+      "NIST 800-53",
+    ],
+    githubUrl: "https://github.com/tmarktg/ato-in-a-pipeline",
+    image: "project-ato-in-a-pipeline",
+  },
 ];
 
 export type InterestTile = {
