@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const title = "Mark Truong — Full-Stack & DevOps Engineer";
+const title = "Mark Truong";
 const description =
   "Full-stack engineer specializing in Python, TypeScript, and cloud infrastructure. Active DoD Secret clearance. San Diego, CA.";
 
@@ -36,7 +36,6 @@ export const metadata: Metadata = {
     title,
     description,
   },
-  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
