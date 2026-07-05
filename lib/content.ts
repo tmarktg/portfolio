@@ -126,6 +126,20 @@ export const interests: InterestTile[] = [
     glyph: "0x00",
     image: "interest-os-development",
   },
+  {
+    name: "Lichess",
+    descriptor: "Free, open-source chess server and analysis platform.",
+    url: "https://github.com/lichess-org/lila",
+    glyph: "♞",
+    image: "interest-lichess",
+  },
+  {
+    name: "Stockfish",
+    descriptor: "Open-source chess engine, among the strongest in the world.",
+    url: "https://github.com/official-stockfish/stockfish",
+    glyph: "♛",
+    image: "interest-stockfish",
+  },
 ];
 
 export type Involvement = {
@@ -154,7 +168,7 @@ export const contact = {
   github: "https://github.com/tmarktg",
 };
 
-export type NavLink = { label: string; href: string };
+export type NavLink = { label: string; href: string; external?: boolean };
 
 export const nav: NavLink[] = [
   { label: "Projects", href: "#projects" },
@@ -162,4 +176,5 @@ export const nav: NavLink[] = [
   { label: "Interests", href: "#interests" },
   { label: "Contact", href: "#contact" },
   { label: "Resume", href: "/resume/" },
+  { label: "Blog", href: "https://marktruong.dev", external: true },
 ];

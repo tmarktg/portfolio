@@ -15,13 +15,17 @@ export function SiteNav() {
             // Hash links (#projects, etc.) only exist on the homepage, so they
             // must resolve there even when clicked from another page like
             // /resume — otherwise clicking them on /resume does nothing.
-            const href = link.href.startsWith("#")
-              ? `${basePath}/${link.href}`
-              : `${basePath}${link.href}`;
+            const href = link.external
+              ? link.href
+              : link.href.startsWith("#")
+                ? `${basePath}/${link.href}`
+                : `${basePath}${link.href}`;
             return (
               <a
                 key={link.href}
                 href={href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="font-mono text-xs text-muted transition-colors hover:text-accent-text sm:text-sm"
               >
                 {link.label}
