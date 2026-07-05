@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+/dist/
+
+# resume-as-code build artifacts (regenerated every build/CI run)
+/public/resume.txt
+
+# production
+/build
+
+# misc
+.DS_Store
+Thumbs.db
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# env files (can opt-in for committing if needed)
+.env*
+*.local
+
+# editor / OS noise
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# planning/spec docs — keep out of the public repo. None of these are
+# imported or rendered by the site at build time (verified before adding
+# this rule), so no exceptions are needed beyond README.md.
+*.md
+!README.md

@@ -1,0 +1,149 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Mark Truong",
+    "label": "DevOps Engineer",
+    "url": "https://example.com",
+    "summary": "Computer Science graduate from San Diego State University with production engineering experience. Hands-on with infrastructure as code (Terraform), CI/CD automation (GitHub Actions, GitLab), containerization (Docker), and serverless AWS architectures across the full deployment lifecycle. Comfortable in Agile/Scrum environments, writing technical documentation, and collaborating across teams to ship reliable, automated systems. Seeking a DevOps engineering role to build and operate scalable, reproducible infrastructure. Active DoD Secret clearance.",
+    "location": {
+      "city": "San Diego",
+      "region": "California",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "tmarktg",
+        "url": "https://github.com/tmarktg"
+      }
+    ],
+    "clearance": "Secret"
+  },
+  "work": [
+    {
+      "name": "CineStar Cinemas",
+      "position": "DevOps Engineer",
+      "startDate": "2025-12",
+      "endDate": "2026-03",
+      "summary": "Production-grade cinema booking platform serving real end-user traffic across multiple enterprise client sites.",
+      "highlights": [
+        "Built and maintained a production-grade cinema booking platform integrating a React/Next.js frontend with a Magento 2 OOP backend, serving real end-user traffic across multiple enterprise client sites",
+        "Designed and implemented a GraphQL API layer with custom resolvers and a REST service layer, applying enterprise integration patterns compatible with both modern and legacy system architectures",
+        "Executed relational database schema changes and MySQL migrations to support new platform features, maintaining data integrity across production environments",
+        "Containerized the development environment with Docker across Linux/WSL2 and macOS, enabling reproducible builds and reducing onboarding friction for distributed teams",
+        "Authored technical documentation, architecture specs, and integration guides to support team onboarding, handoff procedures, and long-term system maintenance"
+      ]
+    },
+    {
+      "name": "San Diego State University",
+      "position": "Computer Science Tutor",
+      "startDate": "2023-12",
+      "endDate": "2025-05",
+      "highlights": [
+        "Tutored undergraduate students in Data Structures, Algorithms, and core CS fundamentals, reinforcing OOP principles, algorithmic thinking, and engineering best practices",
+        "Collaborated with faculty to assess student work with a focus on technical rigor, code correctness, and efficient problem-solving"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "San Diego State University",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2023-08",
+      "endDate": "2025-05",
+      "score": "3.9 GPA, summa cum laude"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Serverless Stock Data Pipeline",
+      "description": "Event-driven AWS pipeline (EventBridge cron → ingestion Lambda → DynamoDB → retrieval Lambda → API Gateway → S3 static frontend) serving live stock data end to end. All infrastructure provisioned as code with Terraform; build, test, and deploy automated with GitHub Actions CI/CD.",
+      "keywords": ["AWS", "Terraform", "GitHub Actions", "Python"],
+      "url": "https://github.com/tmarktg/stocks-serverless-pipeline"
+    },
+    {
+      "name": "Cinephile",
+      "description": "Conversational movie recommendation engine: RAG pipeline with agentic LangGraph path, multi-turn context, and eval harness.",
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "Qdrant",
+        "LangGraph",
+        "Claude API",
+        "React"
+      ],
+      "url": "https://github.com/tmarktg/cinephile"
+    },
+    {
+      "name": "AI Meme Generator",
+      "description": "Image captioning pipeline from AI Club at SDSU: BLIP captioning, Claude-powered meme rewriting, Pillow rendering, FastAPI + React app.",
+      "keywords": ["Hugging Face", "BLIP", "Claude API", "FastAPI", "React"],
+      "url": "https://github.com/tmarktg/image-captioning"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "PHP",
+        "SQL",
+        "Java (actively developing)"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "React",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Redux Toolkit"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "Node.js",
+        "RESTful APIs",
+        "GraphQL APIs",
+        "PHP 8.1/8.2",
+        "Magento 2 (OOP backend)",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Tools & Platforms",
+      "keywords": [
+        "Git",
+        "GitHub Actions",
+        "GitLab CI/CD",
+        "Docker",
+        "Terraform (IaC)",
+        "AWS (Lambda, DynamoDB, API Gateway, S3, EventBridge)",
+        "Nginx",
+        "Linux/Unix",
+        "Jest"
+      ]
+    },
+    {
+      "name": "Methodologies",
+      "keywords": [
+        "Agile/Scrum",
+        "OOP",
+        "Design Patterns",
+        "SDLC",
+        "API Design (REST & GraphQL)"
+      ]
+    }
+  ],
+  "certificates": [],
+  "meta": {
+    "version": "v1.0.0",
+    "lastModified": "auto-set at build time"
+  }
+}

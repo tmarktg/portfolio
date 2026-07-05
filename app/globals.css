@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050507;
+  --color-foreground: #ededf2;
+  --color-muted: #8a8a93;
+  --color-accent: #0000f2;
+  /* Brightened for WCAG AA text contrast on #050507 (~5.3:1). #2323ff, the
+     variant Project.md suggests for text, only measures ~2.7:1 and fails.
+     Overridden for light mode below — a light-optimized blue would fail
+     against a light background, so this flips per prefers-color-scheme. */
+  --color-accent-text: #7070ff;
+  /* Fixed (not theme-dependent): text/background pairing for the solid
+     Button variant, where the accent fill is always blue in both themes
+     and needs a text color + hover shade that stays legible regardless. */
+  --color-on-accent: #ededf2;
+  --color-accent-hover: #2323ff;
+
+  --font-sans: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --text-hero: clamp(2.75rem, 8vw, 7rem);
+  --text-hero--line-height: 0.95;
+  --text-hero--letter-spacing: -0.02em;
+
+  --text-section-heading: clamp(1.75rem, 4vw, 3rem);
+  --text-section-heading--line-height: 1.05;
+
+  --animate-blink: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@utility container-page {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--color-accent-text);
+    outline-offset: 2px;
+  }
+}
+
+/* FadeIn (components/ui/FadeIn.tsx): these classes are only ever added via
+   classList in useEffect, never present in server-rendered HTML — content
+   stays fully visible with JavaScript disabled. */
+.fade-pending {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Automatic light mode, driven purely by the visitor's OS/browser
+   preference — no manual toggle. All contrast ratios recomputed for this
+   palette (not just inverted): background/foreground exceed 17:1, muted
+   text is ~5.9:1, and accent-text (#0000f2 — the un-brightened blue) is
+   ~8.6:1 against this background. --color-accent and --color-on-accent
+   stay constant across both themes (see @theme above). */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #f7f7f9;
+    --color-foreground: #121214;
+    --color-muted: #5f5f68;
+    --color-accent-text: #0000f2;
+  }
+}
+
+/* Cmd+P fallback for a human printing /resume directly (app/resume/page.tsx). */
+@media print {
+  .resume-print-fallback {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  .resume-print-fallback header,
+  .resume-print-fallback footer,
+  .resume-print-fallback .no-print {
+    display: none !important;
+  }
+}
