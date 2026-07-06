@@ -80,6 +80,26 @@
       "description": "Image captioning pipeline from AI Club at SDSU: BLIP captioning, Claude-powered meme rewriting, Pillow rendering, FastAPI + React app.",
       "keywords": ["Hugging Face", "BLIP", "Claude API", "FastAPI", "React"],
       "url": "https://github.com/tmarktg/image-captioning"
+    },
+    {
+      "name": "Secure Software Delivery Reference Pipeline (ATO-in-a-Pipeline)",
+      "description": "DoD-style DevSecOps pipeline: 10 hard-blocking CI/CD gates (Semgrep, Gitleaks, Trivy, Syft, Cosign) deploying a containerized service to Kubernetes under Kyverno admission policies. Ansible DISA STIG hardening and Terraform drift detection feed a single controls.yaml generating a NIST 800-53 matrix and schema-validated OSCAL.",
+      "keywords": [
+        "GitLab CI",
+        "GitHub Actions",
+        "Semgrep",
+        "Gitleaks",
+        "Trivy",
+        "Syft",
+        "Cosign",
+        "Kyverno",
+        "Kubernetes",
+        "Ansible",
+        "Terraform",
+        "NIST 800-53",
+        "OSCAL"
+      ],
+      "url": "https://github.com/tmarktg/ato-in-a-pipeline"
     }
   ],
   "skills": [
