@@ -85,6 +85,42 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/tmarktg/ato-in-a-pipeline",
     image: "project-ato-in-a-pipeline",
   },
+  {
+    number: "05",
+    title: "PortCheck",
+    description:
+      "Full-stack cargo entry screening system simulating a port-of-entry workflow — importers file manifests, a risk engine flags shipments, and officers/supervisors review and track them through an Angular console backed by a Spring Boot REST/SOAP API and PostgreSQL, deployable via Docker Compose, Kubernetes, or Terraform-provisioned AWS (ECS Fargate + RDS + ALB).",
+    tags: [
+      "Spring Boot",
+      "Angular",
+      "PostgreSQL",
+      "SOAP",
+      "Docker Compose",
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+    ],
+    githubUrl: "https://github.com/tmarktg/portcheck",
+    image: "project-portcheck",
+  },
+  {
+    number: "06",
+    title: "Sentinel-Grid",
+    description:
+      "Sensor-telemetry ingestion and analytics platform that joins an existing field-sensor deployment mid-stream — idempotent ingestion, rolling-window anomaly detection and alerting, a documented REST API, a React operator dashboard, and a C#/.NET notifier consuming that same API as a second-language client, deployed live to AWS via Terraform.",
+    tags: [
+      "FastAPI",
+      "TimescaleDB",
+      "Redis",
+      "React",
+      "C# / .NET",
+      "Terraform",
+      "AWS EC2",
+      "GitHub Actions",
+    ],
+    githubUrl: "https://github.com/tmarktg/sentinel-grid",
+    image: "project-sentinel-grid",
+  },
 ];
 
 export type InterestTile = {
