@@ -230,6 +230,7 @@ export const bio =
 
 export const contact = {
   github: "https://github.com/tmarktg",
+  chess: "https://www.chess.com/member/marktruong",
 };
 
 export type NavLink = { label: string; href: string; external?: boolean };

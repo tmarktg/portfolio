@@ -29,6 +29,19 @@ export function MailIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+export function ChessIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M12 2.5c-1.38 0-2.5 1.12-2.5 2.5 0 .69.28 1.31.73 1.77-.9.72-1.48 1.85-1.6 3.23-.06.7.06 1.36.32 1.94-1.16.98-1.95 2.71-1.95 4.35 0 .5.08.97.22 1.41L6.5 20.5v1h11v-1l-.72-2.3c.14-.44.22-.91.22-1.41 0-1.64-.79-3.37-1.95-4.35.26-.58.38-1.24.32-1.94-.12-1.38-.7-2.51-1.6-3.23.45-.46.73-1.08.73-1.77 0-1.38-1.12-2.5-2.5-2.5Z" />
+    </svg>
+  );
+}
+
 export function ArrowUpRightIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
