@@ -1,5 +1,5 @@
 import { contact } from "@/lib/content";
-import { GitHubIcon } from "@/lib/icons";
+import { GitHubIcon, ChessIcon, XIcon } from "@/lib/icons";
 import { IconLink } from "@/components/ui/IconLink";
 import { RevealEmail } from "@/components/ui/RevealEmail";
 
@@ -15,6 +15,12 @@ export function Footer() {
         <div className="flex items-center gap-4">
           <IconLink label="Mark Truong on GitHub" href={contact.github} target="_blank" rel="noopener noreferrer">
             <GitHubIcon className="h-4 w-4" />
+          </IconLink>
+          <IconLink label="Mark Truong on Chess.com" href={contact.chess} target="_blank" rel="noopener noreferrer">
+            <ChessIcon className="h-4 w-4" />
+          </IconLink>
+          <IconLink label="Mark Truong on X" href={contact.twitter} target="_blank" rel="noopener noreferrer">
+            <XIcon className="h-4 w-4" />
           </IconLink>
           <RevealEmail variant="icon" />
         </div>

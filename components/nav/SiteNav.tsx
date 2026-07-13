@@ -1,6 +1,6 @@
 import { nav, contact } from "@/lib/content";
 import { basePath } from "@/lib/site-config";
-import { GitHubIcon, ChessIcon } from "@/lib/icons";
+import { GitHubIcon, ChessIcon, XIcon } from "@/lib/icons";
 import { IconLink } from "@/components/ui/IconLink";
 
 export function SiteNav() {
@@ -37,6 +37,9 @@ export function SiteNav() {
           </IconLink>
           <IconLink label="Mark Truong on Chess.com" href={contact.chess} target="_blank" rel="noopener noreferrer">
             <ChessIcon className="h-5 w-5" />
+          </IconLink>
+          <IconLink label="Mark Truong on X" href={contact.twitter} target="_blank" rel="noopener noreferrer">
+            <XIcon className="h-5 w-5" />
           </IconLink>
         </div>
       </nav>
