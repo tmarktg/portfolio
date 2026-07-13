@@ -10,7 +10,7 @@ export function ContactSection() {
     <Section id="contact" label="#4 Connect" heading="Contact">
       <div className="space-y-8">
         <p className="max-w-xl text-lg text-muted">
-          Open to software engineering and DevOps roles — cleared and civilian.
+          Open to software engineering and DevOps roles - cleared and civilian.
         </p>
         <div className="flex flex-wrap items-center gap-6">
           <RevealEmail variant="text" />

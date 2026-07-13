@@ -197,6 +197,13 @@ export const interests: InterestTile[] = [
     glyph: "♛",
     image: "interest-stockfish",
   },
+  {
+    name: "Asahi Linux",
+    descriptor: "Community-driven Linux support for Apple Silicon Macs.",
+    url: "https://asahilinux.org",
+    glyph: "⌘",
+    image: "interest-asahi-linux",
+  },
 ];
 
 export type Involvement = {

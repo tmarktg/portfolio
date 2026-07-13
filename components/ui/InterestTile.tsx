@@ -7,11 +7,12 @@ import { ArrowUpRightIcon } from "@/lib/icons";
 
 // Server Component only — runs at build time under static export. Mirrors
 // ProjectCard's resolver: whichever extension exists under public/ wins,
-// .png checked first.
+// checked in this order.
 function resolveInterestImage(image: string): string {
   const publicDir = path.join(process.cwd(), "public");
-  const hasPng = existsSync(path.join(publicDir, `${image}.png`));
-  const ext = hasPng ? "png" : "jpg";
+  const ext = ["svg", "png", "jpg"].find((candidate) =>
+    existsSync(path.join(publicDir, `${image}.${candidate}`)),
+  );
   return `${basePath}/${image}.${ext}`;
 }
 
